@@ -1,0 +1,34 @@
+﻿
+=== Analyse de l'IP ===
+ - IP : 145.23.25.11/24
+ - Classe :145.23.25.0/0
+ - Type : 0.0.0.11/0
+ - Classe : B 
+ - Type : Public
+======================
+
+=== Analyse de l'IP ===
+ - IP : 172.25.36.24/12
+ - Adresse réseau :172.16.0.0/0
+ - Adresse Hôte : 0.9.36.24/0
+ - Classe : B 
+ - Type : Privée
+======================
+
+=== Analyse de l'IP ===
+ - IP : 12.25.36.14/25
+ - Adresse réseau :12.25.36.0/0
+ - Adresse Hôte : 0.0.0.14/0
+ - Classe : A 
+ - Type : Public
+======================
+
+
+=== Analyse de l'IP ===
+ - IP : 253.123.10.2/15
+ - Adresse réseau :253.122.0.0/0
+ - Adresse Hôte : 0.1.10.2/0
+ - Classe : E 
+ - Type : Public
+======================
+
