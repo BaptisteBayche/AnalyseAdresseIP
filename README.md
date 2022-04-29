@@ -2,7 +2,7 @@
 
 Mini projet C (R2.04) sur le sujet 2 - Analyse adresse IP 
 
-Lien GIT :
+Lien GIT : https://gitlab.info.iut-tlse3.fr/bcb4249a/projetc-s2ga2
 
 # But du programme
 
