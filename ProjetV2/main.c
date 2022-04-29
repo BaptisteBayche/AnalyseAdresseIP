@@ -66,7 +66,7 @@ void main () {
 
             
         }else{
-            printf("%sEntrer une adresse IP valide ! (4 octets entre 0 et 255, et 1 CIDR entre 0 et 31)\n",verifFormat(ip));
+            printf("%sEntrer une adresse IP valide ! (4 octets entre 0 et 255, et 1 CIDR entre 0 et 30)\n",verifFormat(ip));
         }
     }
     
