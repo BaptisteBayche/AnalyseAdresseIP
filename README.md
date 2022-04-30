@@ -32,7 +32,7 @@ Pour utiliser le programme :
     - L'IP doit être sous la forme suivante (xxx.xxx.xxx.xxx/yy)
     - Les "x" doivent être remplacé par un nombre compris entre 0 et 255.
       Ils correspondent aux 4 octets qui composent de l'IP.
-    - Les  "y" doivent être remplacé par un nombre compris entre 0 et 30.
+    - Les  "y" doivent être remplacé par un nombre compris entre 0 et 32.
       Ils correspondent au numéro CIDR (masque réseau) de l'IP.
     - Exemples : 
         - 192.168.140.25/12
