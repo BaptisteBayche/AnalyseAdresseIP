@@ -27,7 +27,7 @@ Groupe A2 :
 
 Pour utiliser le programme : 
   - Se placer dans le dossier contenant le code via un terminal.
-  - Taper la commande "make" ou "make all".
+  - Taper la commande "`make`" ou "`make all`".
   - Le programme vous demande alors de rentrer une IP :  
     - L'IP doit être sous la forme suivante (xxx.xxx.xxx.xxx/yy)
     - Les "x" doivent être remplacé par un nombre compris entre 0 et 255.
@@ -41,6 +41,8 @@ Pour utiliser le programme :
       de rentrer l'IP.
   - L'analyse de l'IP est affichée dans le terminal, et également dans le fichier "enregistrement_ip" ou toutes les analyses sont sauvegarder.
   - Une fois l'analyse terminé, vous pouvez analyser une autre IP en tapant "oui" dans la console ou "non" pour arreter.
-        
+
+  - La commande "`make supAnalyse`" permet de supprimer toutes les analyses sauvegarder dans le fichier "enregistrement_ip".
+  - La commande "`make clean`" permet de supprimer les fichiers .o et .exe crée lors de la compilation.        
 
 
