@@ -64,7 +64,11 @@ void main () {
             printf("\nVoulez vous analyser une autre IP? (oui / non)\n");
             fgets(recommencer,4,stdin);
 
-            
+            while (strcmp(recommencer, "oui") != 0 && strcmp(recommencer, "Oui") != 0 && strcmp(recommencer, "OUI") != 0 && strcmp(recommencer, "non") != 0 && strcmp(recommencer, "Non") != 0 && strcmp(recommencer, "NON") != 0 ){
+                printf("\nVoulez vous analyser une autre IP? (oui / non)\n");
+                fgets(recommencer,4,stdin);
+            }
+   
         }else{
             printf("%sEntrer une adresse IP valide ! (4 octets entre 0 et 255, et 1 CIDR entre 0 et 30)\n",verifFormat(ip));
         }

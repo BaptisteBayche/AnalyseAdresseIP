@@ -31,10 +31,14 @@ BINAIRES = $(patsubst %.c,%.o,${SOURCES})
 
 all : ${BINAIRES}
 	${CC} ${CFLAGS} -o main $^
+	touch enregistrement_ip
 
 main.o : analyseIP.h
 
 analyseIP.o : analyseIP.h
+
+supAnalyse:
+	rm -f enregistrement_ip
 
 clean :
 	rm -f main
