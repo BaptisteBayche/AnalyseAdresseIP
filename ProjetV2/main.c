@@ -46,7 +46,7 @@ void main () {
             struct structIP adresseReseau;
             struct structIP adresseHote;
             
-            decomposationIP(ip, &ipDec);
+            decompositionIP(ip, &ipDec);
             
             CalculerMasque(&ipDec,&adresseReseau,&adresseHote);
             

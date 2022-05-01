@@ -30,13 +30,14 @@
 #include <string.h>
 #include "analyseIP.h"
 
-void decomposationIP(char ip[], struct structIP* ips){
+void decompositionIP(char ip[], struct structIP* ips){
+    
     char octet[4] = "";
     int cpt = 0;
     int placeOctet  = 1;
 
     for (int i = 0 ; ip[i] != '\0'  ; i ++ ){
- 
+     
         if (ip[i] == '.' || ip[i] == '/' ){    
             cpt = 0;
             //On range les valeurs décomposees dans la structure
@@ -52,7 +53,7 @@ void decomposationIP(char ip[], struct structIP* ips){
             } 
 
             placeOctet++;          
-            
+                
         } else {
             //Tant que ce n'est pas un . ou un / on ajoute à octet les caracteres de l'adresse IP
             if (ip[i] == ' '){}
@@ -61,11 +62,12 @@ void decomposationIP(char ip[], struct structIP* ips){
                 octet[cpt] = ip[i];
                 cpt++;
             }
-            
+                
         }
     }
 
-    (*ips).CIDR = strtol(octet, NULL,10);    
+    (*ips).CIDR = strtol(octet, NULL,10); 
+      
 }
 
 void affichageIP(char nom[], struct structIP* ip){
@@ -73,18 +75,20 @@ void affichageIP(char nom[], struct structIP* ip){
 }
 
 int decimal2Binaire(int nb) {
-  int resultat = 0;
-  int reste, i = 1;
- 
+    if (nb >= 0){
+      int resultat = 0;
+      int reste, i = 1;
+     
 
-  while (nb!=0) {
-    reste = nb % 2;
-    nb /= 2;
-    resultat += reste * i;
-    i *= 10;
-   
-  }
-  return resultat;
+      while (nb!=0) {
+        reste = nb % 2;
+        nb /= 2;
+        resultat += reste * i;
+        i *= 10;
+       
+      }
+      return resultat;
+    }
 }
 
 void ipBinaire(struct structIP* ip, struct structIP* ipBinaire){
@@ -105,7 +109,7 @@ void CalculerMasque(struct structIP* ip, struct structIP* adresseReseau, struct 
 
     
     struct structIP masqueIP;
-    decomposationIP(masqueTab[(*ip).CIDR], &masqueIP);
+    decompositionIP(masqueTab[(*ip).CIDR], &masqueIP);
 
     (*adresseReseau).oct1 = (*ip).oct1 & masqueIP.oct1;
     (*adresseReseau).oct2 = (*ip).oct2 & masqueIP.oct2;

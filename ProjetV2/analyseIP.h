@@ -39,7 +39,7 @@ struct structIP {
 };
 
 //Permet de décomposer l'ip ip[] rentrer par l'utilisateur dans une structure structIP ip1
-void decomposationIP(char ip[], struct structIP* ip1);
+void decompositionIP(char ip[], struct structIP* ip1);
 
 //Permet l'affiche d'une adresse IP ip avec son nom nom[]
 void affichageIP(char nom[], struct structIP* ip);
@@ -47,7 +47,7 @@ void affichageIP(char nom[], struct structIP* ip);
 //Permet de convertir un nombre décimal nb en nombre binaire
 int decimal2Binaire(int nb);
 
-// Permet de calculer le masque d'une IP ip à partir de l'adresse reseau et de l'adresse hote
+// Permet de calculer l'adresse reseau et l'adresse hote
 void CalculerMasque(struct structIP* ip, struct structIP* adresseReseau, struct structIP* adresseHote);
 
 // Permet de convertir une IP ip décimal en IP binaire ipBinaire
